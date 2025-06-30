@@ -18,7 +18,7 @@ print(n)
 try:
     with open(FNL, "w") as file:
         
-        for number in tqdm(range(int(n)), desc="Generating wordlist", unit=" number"):
+        for number in tqdm(range(int(n)+1), desc="Generating wordlist", unit=" number"):
             file.write(f"{number:09}\n")
     print(f"\nWordlist created successfully and saved to "+FNL)
 except Exception as e:
